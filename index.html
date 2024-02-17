@@ -37,7 +37,6 @@
         <div>
           <div class="flex justify-center gap-1 my-1 w-full">
             <kbd id="q" class="kbd">q </kbd>
-            <kbd id="q" class="kbd">q </kbd>
             <kbd id="w" class="kbd">w </kbd>
             <kbd id="e" class="kbd">e </kbd>
             <kbd id="r" class="kbd">r </kbd>
@@ -77,13 +76,13 @@
           <button class="btn bg-[#894189] rounded-full px-5 text-white">
             Life
             <img src="images/heart.svg" alt="">
-            <span>1</span>
+            <span id="current-life">5</span>
 
           </button>
           <button class="btn bg-[#360490] rounded-full px-5 text-white">
             score
             <img src="images/spark.svg" alt="">
-            <span>1</span>
+            <span id="current-score">0</span>
 
           </button>
         </div>
@@ -92,13 +91,13 @@
       </div>
     </section>
     <!-- score section -->
-    <section class="score-page flex justify-center items-center min-h-screen hidden">
+    <section id="final-score" class="flex justify-center items-center min-h-screen hidden">
       <div class="text-white text-center space-y-5 bg-[#FFFFFF33] rounded-xl p-8">
         <h1 class="text-8xl">
           <span class="font-extrabold">score:</span>
-          <span>14</span>
+          <span id="last-score">14</span>
         </h1>
-        <button class="btn rounded-lg text-black">Play again</button>
+        <button onclick="play()" class="btn rounded-lg text-black">Play again</button>
         <p>Practice will make you Pro</p>
       </div>
     </section>
